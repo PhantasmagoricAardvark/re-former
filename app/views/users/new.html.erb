@@ -1,11 +1,20 @@
 <h1>Users#new</h1>
 <h2>Form</h2>	
-<form action="/users" method="post" accept-charset="UTF-8">
-	<label for="user_name">Username:</label> 
+<!--<form action="/users" method="post" accept-charset="UTF-8">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+	<label for="user_username">Username:</label> 
 	<input type="text" name="user[username]"><br>
+	
 	<label for="user_email">Email:</label> 
 	<input type="email" name="user[email]"><br>
+	
 	<label for="user_password">Password:</label> 
 	<input type="password" name="user[password]"><br>
+
 	<input type="submit" name="commit" value="Create User"><br>
-</form>
+</form>-->
+
+<%= form_tag("/users") do %>
+	
+<% end %>
